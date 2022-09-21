@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+    <div class="navigation">
+
+        <a href="kityardhome.html">Home</a>
+        <a href="kyhockey.html">About</a>
+        <a href="kyfootball.html">Contact</a>
+        <a href="kygolf.html">Resume</a>
+
+    </div>
+    <main>
+        <div id="container">
+            <div id="center">
+                <h1 onmouseover="changeText(this);" id="bigtitle" onmouseout="resetText(this)">
+                    Hi, welcome to my website.
+                </h1>
+            </div>
+            <div id="smallblock">
+
+                </p>
+                <p>
+                <div id="centerme">
+                    <button onclick="revealMessage()" class="bubbly-button" clickAction=jumpToStart>Click me!</button>
+                    <p id="hiddenMessage" style="display: none">Hover over the H1... </p>
+                    <!-- </p>Scroll to view my experience and projects
+                    </p> -->
+                </div>
+            </div>
+        </div>
+        <div id="project">
+            <h2 id="projecttitle">Project Work</h2>
+            <button class="bubbly-button" id="arrow" onclick="revealProjects()">
+                View Projects
+            </button>
+            <div id="examples" style="display:none">
+                <h3 class="greytext">Credit Card Validator</h3>
+                <p class="greytext">An exercise that determines the validity of credit card numbers using Luhn's
+                    algorithm.
+                </p>
+                <h3 class="greytext">Davie's Burgers</h3>
+                <p class="greytext">I created a form for gathering customer requests through different input fields
+                    which
+                    performed
+                    client-side validation.</p>
+                <h3 class="greytext">Bouncing Ball Game</h3>
+                <p class="greytext">I created a minigame in which the ball is bounced up when the user presses any key.
+                    This
+                    was done using event listeners triggered by the keydown function.</p>
+            </div>
+        </div>
+        <div id="maincontent">
+            <h2 id="worktitle">Experience</h2>
+            <button class="bubbly-button" id="jobs" onclick="revealExperience()">
+                View Experience
+            </button>
+            <div id="showJobs" style="display:none">
+                <h3>Tandem Bank</h3>
+
+                <h4>Banking Operations</h4>
+                <p>I handle back office requests to service accounts for credit <br>
+                    card and savings customers. My duties range from administering <br>
+                    Power of Attorney to Section 75 Credit Settlements.
+                </p>
+
+                <h3>Barclays UK</h3>
+                <h4>Community Banker</h4>
+                <p>During my time at Barclays I serviced a range of personal,<br>
+                    business and premier customers with their daily banking <br>
+                    needs in branch and via telephone.
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
